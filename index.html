@@ -1,0 +1,29 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./vue3.js"></script>
+  </head>
+  <body>
+    <div id="counter">
+      <p>{{num}}</p>
+      <p>{{uname}}</p>
+    </div>
+    <script>
+      const Counter = {
+        data: function () {
+          return {
+            num: 0,
+            uname: "張三",
+          };
+        },
+      };
+      Vue.createApp(Counter).mount("#counter"); //創建應用，將配置對象傳入
+    </script>
+  </body>
+</html>
